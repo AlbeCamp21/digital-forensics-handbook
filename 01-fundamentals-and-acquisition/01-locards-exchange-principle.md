@@ -76,8 +76,8 @@ The most critical implication of Locard's Exchange Principle for digital forensi
 
 If an investigator powers on a suspect computer, logs in, and begins clicking through folders to look for evidence, the investigator is altering the system state. They are updating Last Access timestamps, generating new execution caches, writing to the system pagefile, and overwriting deleted data in unallocated space. The investigator has contaminated the evidence.
 
-[!IMPORTANT]
-Because the investigator inherently leaves a trace when interacting with a system, the field of digital forensics relies on strict methodologies to mitigate this. This requires prioritizing the collection of fragile data first (addressed in `02-order-of-volatility-and-acquisition-types.md`) and using specialized hardware/software to interact with storage media without writing to it (addressed in `04-evidence-preservation-and-write-blocking.md`).
+> [!IMPORTANT]
+> Because the investigator inherently leaves a trace when interacting with a system, the field of digital forensics relies on strict methodologies to mitigate this. This requires prioritizing the collection of fragile data first (addressed in `02-order-of-volatility-and-acquisition-types.md`) and using specialized hardware/software to interact with storage media without writing to it (addressed in `04-evidence-preservation-and-write-blocking.md`).
 
 ## 5. Offensive Perspective: Anti-Forensics
 
@@ -97,8 +97,8 @@ Because of the deterministic nature of computer systems, executing an anti-foren
 * If an attacker clears the Windows Security Log, the action generates **Event ID 1102: The audit log was cleared**.
 * If an attacker uses timestomping to alter a file's `$STANDARD_INFORMATION` timestamp attribute in the NTFS file system, the `$FILE_NAME` timestamp attribute often remains unchanged, alerting the analyst to the manipulation.
 
-[!NOTE]
-In digital forensics, the sudden and inexplicable *absence* of data—such as a missing sequence of Event Logs or a gap in a registry sequence—is itself a highly valuable artifact.
+> [!NOTE]
+> In digital forensics, the sudden and inexplicable *absence* of data—such as a missing sequence of Event Logs or a gap in a registry sequence—is itself a highly valuable artifact.
 
 ## 6. Limitations and Edge Cases
 
